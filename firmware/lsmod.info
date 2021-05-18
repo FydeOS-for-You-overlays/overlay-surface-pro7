@@ -1,0 +1,55 @@
+Module                  Size  Used by
+usb_f_fs               36864  0
+libcomposite           49152  1 usb_f_fs
+udc_core               49152  2 libcomposite,usb_f_fs
+bridge                143360  0
+stp                    16384  1 bridge
+llc                    16384  2 bridge,stp
+veth                   24576  0
+tun                    45056  0
+nf_nat_tftp            16384  0
+nf_conntrack_tftp      16384  1 nf_nat_tftp
+nf_nat_ftp             16384  0
+nf_conntrack_ftp       16384  1 nf_nat_ftp
+esp6                   20480  0
+ah6                    16384  0
+ip6t_REJECT            16384  2
+ip6t_ipv6header        16384  0
+ccm                    20480  3
+rfcomm                 40960  2
+cmac                   16384  3
+algif_hash             16384  1
+algif_skcipher         16384  1
+af_alg                 20480  6 algif_hash,algif_skcipher
+uinput                 20480  0
+snd_hda_codec_hdmi     53248  1
+xt_cgroup              16384  2
+btusb                  49152  0
+btrtl                  16384  1 btusb
+btintel                24576  1 btusb
+btbcm                  16384  1 btusb
+bluetooth             466944  32 btrtl,btintel,btbcm,btusb,rfcomm
+ecdh_generic           16384  2 bluetooth
+ecc                    28672  1 ecdh_generic
+iwlmvm                327680  0
+snd_hda_codec_realtek   106496  1
+snd_hda_codec_generic    65536  1 snd_hda_codec_realtek
+mac80211              765952  1 iwlmvm
+ledtrig_audio          16384  1 snd_hda_codec_generic
+snd_hda_intel          36864  0
+snd_intel_dspcfg       16384  1 snd_hda_intel
+snd_hda_codec         106496  4 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec_realtek
+snd_hda_core           69632  5 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec,snd_hda_codec_realtek
+snd_hwdep              16384  1 snd_hda_codec
+iwlwifi               299008  1 iwlmvm
+wmi                    24576  0
+surfacepro3_button     16384  0
+soc_button_array       16384  0
+xt_MASQUERADE          16384  1
+fuse                  110592  20
+cfg80211              712704  3 iwlmvm,iwlwifi,mac80211
+lzo_rle                16384  8
+lzo_compress           16384  1 lzo_rle
+zram                   20480  1
+i915                 2174976  32
+joydev                 24576  0

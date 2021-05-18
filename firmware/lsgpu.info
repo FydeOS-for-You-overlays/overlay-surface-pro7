@@ -1,0 +1,32 @@
+sys:/sys/devices/pci0000:00/0000:00:02.0/drm/card1
+    subsystem       : drm
+    drm card        : /dev/dri/card1
+    parent          : sys:/sys/devices/pci0000:00/0000:00:02.0
+
+sys:/sys/devices/pci0000:00/0000:00:02.0/drm/renderD129
+    subsystem       : drm
+    drm render      : /dev/dri/renderD129
+    parent          : sys:/sys/devices/pci0000:00/0000:00:02.0
+
+sys:/sys/devices/platform/vgem/drm/card0
+    subsystem       : drm
+    drm card        : /dev/dri/card0
+    parent          : sys:/sys/devices/platform/vgem
+
+sys:/sys/devices/platform/vgem/drm/renderD128
+    subsystem       : drm
+    drm render      : /dev/dri/renderD128
+    parent          : sys:/sys/devices/platform/vgem
+
+sys:/sys/devices/pci0000:00/0000:00:02.0
+    subsystem       : pci
+    drm card        : /dev/dri/card1
+    drm render      : /dev/dri/renderD129
+    vendor          : 8086
+    device          : 8A5A
+
+sys:/sys/devices/platform/vgem
+    subsystem       : platform
+    drm card        : /dev/dri/card0
+    drm render      : /dev/dri/renderD128
+
