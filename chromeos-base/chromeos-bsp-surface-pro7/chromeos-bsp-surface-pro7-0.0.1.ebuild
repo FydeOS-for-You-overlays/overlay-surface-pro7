@@ -35,4 +35,9 @@ src_install() {
   insinto /usr/share/power_manager/board_specific
   doins ${FILESDIR}/powerd/*
 
+  insinto /lib/firmware
+  doins ${FILESDIR}/firmware/06-7e-05
+
+  insinto /lib/firmware/intel
+  doins ${FILESDIR}/firmware/ibt*
 }
